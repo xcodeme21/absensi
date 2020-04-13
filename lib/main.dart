@@ -25,7 +25,7 @@ class _MyAppState extends State<MyApp> {
         fontWeight: FontWeight.bold,
         fontSize: 20.0
       ),),
-      image: new Image.network('https://i.imgur.com/TyCSG9A.png'),
+      image: Image(image: AssetImage('assets/images/logosplash.png')),
       backgroundColor: Colors.white,
       styleTextUnderTheLoader: new TextStyle(),
       photoSize: 100.0,
@@ -40,7 +40,7 @@ class AfterSplash extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-      title: new Text("Welcome In SplashScreen Package"),
+      title: new Text("Caldera"),
       automaticallyImplyLeading: false
       ),
       body: new Center(
