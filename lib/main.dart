@@ -18,19 +18,22 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return new SplashScreen(
-      seconds: 14,
+      seconds: 5,
       navigateAfterSeconds: new AfterSplash(),
-      title: new Text('Welcome In SplashScreen',
-      style: new TextStyle(
-        fontWeight: FontWeight.bold,
-        fontSize: 20.0
-      ),),
+      title: new Text('Developed by Rudextech',
+        style: new TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 14.0,
+          color: Colors.black.withOpacity(0.5),
+        ),
+      ),
+      
       image: Image(image: AssetImage('assets/images/logosplash.png')),
       backgroundColor: Colors.white,
       styleTextUnderTheLoader: new TextStyle(),
       photoSize: 100.0,
       onClick: ()=>print("Flutter Egypt"),
-      loaderColor: Colors.red
+      loaderColor: Colors.red,
     );
   }
 }
